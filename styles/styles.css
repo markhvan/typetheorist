@@ -1,0 +1,205 @@
+/* general stypes */
+html {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color:rgb(60, 60, 60)
+}
+
+/* end of general gtyles */
+
+/* custom properties */
+:root {
+  --background: #E6F9FF;
+}
+
+/* navbar */
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background);
+  top: 0px;
+  position: sticky;
+}
+
+
+.logo a {
+  color: rgb(60, 60, 60);
+  font-size: 1.6rem;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin-left: 40px;
+}
+
+navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  padding: 0;
+  margin-right: 30px;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(60, 60, 60);
+  font-size: 1rem;
+  font-weight: 450;
+  padding: 0 12px 0 12px;
+  text-transform: uppercase;
+}
+
+nav li a:hover  {
+  color: black;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(60, 60, 60);
+  border-radius: 10px;
+}
+
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+}
+/* end of navbar */
+
+/* body text */
+h2 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+p, 
+li {
+  font-size: 16px;
+  line-height: 2; 
+  letter-spacing: 1px;
+}
+body {
+  width: auto;
+  margin: 0;
+  font-size: 20px;
+}
+
+.essay_parts {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+.essay{
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.welcome {
+  text-align: center;
+}
+
+/* image gallery */
+div.item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 33%;
+  padding-top: 70px;
+}
+
+.caption {
+  display: block;
+  font-size: 14px;
+  line-height: 2; 
+  letter-spacing: 1px;
+  padding-top: 8px;
+}
+
+section {
+  margin: 0 auto;
+  padding: 10px
+}
+/* end of image gallery */
+/* end of body text */
+
+/* Footer */
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 0;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;         /* Footer height */
+}
+
+.spacer {
+  height: 20px;
+  padding: 15px;
+  background: transparent;
+}
+
+/* end of footer */
+
