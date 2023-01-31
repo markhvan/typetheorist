@@ -140,12 +140,11 @@ body {
 .essay_parts {
   font-size: 20px;
   text-align: center;
-  padding: 20px 0 0 0;
 }
 
 .essay{
-  padding-right: 80px;
-  padding-left: 80px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 .welcome {
